@@ -1,0 +1,103 @@
+/* .StrategySection{
+    background-color: #1e2228;
+    height: 153vh;
+    clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
+    width: 100%;
+    @media only screen and (max-width: 1300px) {
+       height: auto;
+}
+    .strategy{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    
+    }
+    .last{
+        margin-top: 50px;
+        position: relative;
+    }
+    
+} */
+.StrategySection {
+    background-color: #1e2228;
+    /* height: 153vh; */
+    clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+
+    @media only screenФ and (max-width: 1300px) {
+        height: auto;
+        padding: 50px 0;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+        transition: background 0.3s ease;
+    }
+
+    &:hover::before {
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .strategy {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        color: #fff;
+        position: relative;
+
+        h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #fff;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: #007bff;
+            }
+
+            @media only screen and (max-width: 1300px) {
+                font-size: 30px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #bbb;
+            margin-bottom: 40px;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: #fff;
+            }
+
+            @media only screen and (max-width: 1300px) {
+                font-size: 16px;
+            }
+        }
+
+        .last {
+            margin-top: 50px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+
+
+        }
+    }
+}

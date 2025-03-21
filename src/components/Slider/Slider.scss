@@ -1,0 +1,73 @@
+.Slider {
+    width: 100%;
+    position: relative;
+    height: 60vh;
+    display: flex;
+    margin-top: 30px;
+    overflow: hidden;
+    .but_left {
+        position: absolute;
+        top: 50%;
+        width: 50px;
+        height: 50px;
+        color: white;
+        background-color: rgb(255, 63, 137);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        font-weight: bolder;
+        z-index: 10000;
+        left: -20px;
+        cursor: pointer;
+        &:hover {
+            background-color: rgb(58, 30, 41);
+        }
+
+    }
+
+    .but_right {
+        background-color: rgb(255, 63, 137);
+        cursor: pointer;
+        position: absolute;
+        font-size: 30px;
+        font-weight: bolder;
+        top: 50%;
+        width: 50px;
+        right: -20px;
+        height: 50px;
+        border-radius: 50%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            background-color: rgb(58, 30, 41);
+        }
+    }
+    .slider_rot{
+        width: 50%;
+        position: relative;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        transition: margin-left 1s ease-in-out;
+        img{
+            width: 400px;
+            height: 400px;
+            position: relative;
+            cursor: pointer;
+            &:hover {
+                filter: blur(2px);
+            }
+            @media only screen and (max-width: 1000px) {
+              width: 200px;
+              height: 200px;
+                }
+        }
+       
+    }
+}

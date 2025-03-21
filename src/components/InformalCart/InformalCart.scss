@@ -1,0 +1,55 @@
+.InformalCart {
+    text-align: center;
+    /* background-color: aqua; */
+
+    @media only screen and (max-width:700px) {
+        width: 80%;
+    }
+
+    h2 {
+        font-size: 40px;
+
+        @media only screen and (max-width:1044px) {
+            font-size: 20px;
+        }
+
+        @media only screen and (max-width:700px) {
+            font-size: 30px;
+        }
+    }
+
+    img {
+        width: 320px;
+        height: 340px;
+
+        @media only screen and (max-width:1044px) {
+            width: 220px;
+            height: 240px;
+        }
+
+        @media only screen and (max-width:700px) {
+            width: 320px;
+            height: 340px;
+        }
+
+    }
+
+    .numbers {
+        display: flex;
+        flex-direction: column;
+
+        span {
+            font-weight: bolder;
+            font-size: 20px;
+
+            @media only screen and (max-width:1044px) {
+                font-size: 15px;
+            }
+
+            @media only screen and (max-width:700px) {
+                font-size: 20px;
+            }
+
+        }
+    }
+}

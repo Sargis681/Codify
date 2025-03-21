@@ -1,0 +1,95 @@
+.HeaderContent {
+    display: flex;
+    justify-content: center;
+
+    .container {
+        display: flex;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        font-size: 50px;
+        text-align: center;
+        margin-top: 100px;
+
+
+        /* background-color: antiquewhite; */
+        .get-started {
+            margin-top: 100px;
+        }
+
+        .welcome {
+            font-size: 5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            line-height: 1.5;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+            background: linear-gradient(90deg, #ff416c, #ff4b2b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: fadeIn 2s ease-in-out;
+            @media only screen and (max-width: 900px) {
+                font-size: 3rem;
+            }
+            @media only screen and (max-width: 500px) {
+                font-size: 2rem;
+            }
+
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-80px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .list {
+            margin-top: 30px;
+
+            .color1 {
+                color: rgb(164, 200, 100);
+                text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+                background: linear-gradient(45deg, rgb(164, 200, 100), rgb(164, 200, 100));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: fadeIn 2s ease-in-out;
+                @media only screen and (max-width: 500px) {
+                    font-size: 2rem;
+                }
+            }
+
+            .color2 {
+                color: rgb(23, 183, 164);
+                text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+                background: linear-gradient(45deg, rgb(23, 183, 164), rgb(23, 183, 164));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: fadeIn 2s ease-in-out;
+                @media only screen and (max-width: 500px) {
+                    font-size: 2rem;
+                }
+
+            }
+
+            .color3 {
+                color: rgb(230, 141, 80);
+                text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+                background: linear-gradient(45deg, rgb(230, 141, 80), rgb(230, 141, 80));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: fadeIn 2s ease-in-out;
+                @media only screen and (max-width: 500px) {
+                    font-size: 2rem;
+                }
+            }
+
+        }
+
+    }
+}

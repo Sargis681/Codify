@@ -1,0 +1,19 @@
+.Header {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(10px);
+    height: 100vh;
+
+    .relative {}
+
+    .content {
+        color: white;
+        display: flex;
+        justify-content: center;
+
+        .container {
+            display: flex;
+            justify-content: center;
+
+        }
+    }
+}

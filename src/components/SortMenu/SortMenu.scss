@@ -1,0 +1,38 @@
+.SortMenu{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    @media only screen and (max-width: 974px) {
+      text-align: center;
+        }
+   
+    .menu{
+        margin: 0 auto;
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+        @media only screen and (max-width: 974px) {
+            width: 90%;
+            margin: 0 auto;
+            /* justify-content: center; */
+            }
+            
+        
+        li{
+            list-style-type: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            cursor: pointer;
+
+            &:hover{
+                color: #949292;
+            }
+            @media only screen and (max-width: 1160px) {
+            font-size: 13px;
+            }
+            @media only screen and (max-width: 531px) {
+                font-size: 10px;
+                }
+        }
+    }
+}

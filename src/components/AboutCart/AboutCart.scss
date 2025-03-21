@@ -1,0 +1,123 @@
+/* 
+
+.about_cart {
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    @media only screen and (max-width:700px) {
+      width: 80%;
+    }
+  
+    &:hover {
+      transform: translateY(-15px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+  
+    img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+  
+    h3 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: rgb(255, 65, 108);
+      margin-bottom: 0.5rem;
+    }
+  
+    p {
+      font-size: 20px;
+      color: #666;
+
+      line-height: 1.6;
+      max-width: 70%;
+      @media only screen and (max-width:1300px) {
+        font-size: 10px;
+      }
+      @media only screen and (max-width:1300px) {
+        font-size: 15px;
+      }
+    }
+  }
+   */
+   .about_cart {
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease;
+    cursor: pointer;
+    position: relative;
+  
+    @media only screen and (max-width: 700px) {
+      width: 80%;
+    }
+  
+    &:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      background-color: #f7f7f7; /* Subtle background change on hover */
+    }
+  
+    img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      object-fit: cover; /* Ensures the image fits within the circle */
+      transition: transform 0.3s ease-in-out;
+  
+      &:hover {
+        transform: scale(1.05); /* Slight zoom on image hover */
+      }
+    }
+  
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #ff416c; /* Soft pink color */
+      margin-bottom: 0.5rem;
+      transition: color 0.3s ease;
+  
+      &:hover {
+        color: #ff3385; /* Darker pink on hover */
+      }
+    }
+  
+    p {
+      font-size: 1rem;
+      color: #777;
+      line-height: 1.6;
+      max-width: 70%;
+      margin-bottom: 1rem;
+      transition: color 0.3s ease;
+  
+      &:hover {
+        color: #333; /* Darker text color on hover */
+      }
+  
+      @media only screen and (max-width: 1300px) {
+        font-size: 14px;
+      }
+  
+      @media only screen and (max-width: 700px) {
+        font-size: 16px;
+      }
+    }
+  }
+  

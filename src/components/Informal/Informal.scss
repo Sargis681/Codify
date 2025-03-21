@@ -1,0 +1,30 @@
+.Informal {
+    width: 100%;
+    text-align: center;
+    /* background-color: black; */
+    height: 50vh;
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width:700px) {
+        height: auto;
+    }
+
+    .informal_container {
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        margin: 0 auto;
+        width: 90%;
+        /* background-color: white; */
+        height: 100vh;
+        display: flex;
+
+        @media only screen and (max-width:700px) {
+            flex-direction: column;
+            height: auto;
+            gap: 30px;
+        }
+
+    }
+}
